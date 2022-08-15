@@ -1,0 +1,98 @@
+{
+    "vim.leader": "[",
+    "workbench.colorTheme": "Naysayer88",
+    "cmake.configureOnOpen": true,
+    "vim.easymotion": true,
+    "vim.normalModeKeyBindings": [
+    
+       {
+        "before": ["<leader>","f"],
+        "commands": ["workbench.action.quickOpen"]
+       },
+       {
+        "before": ["<leader>", "g"],
+        "commands": ["workbench.action.showAllSymbols"]
+       },
+       {
+        "before": ["<leader>", "r"],
+        "commands": ["editor.action.rename"]
+       },
+       {
+        "before": ["<leader>", "e"],
+        "commands": ["editor.action.refactor"]
+       },
+       {
+        "before": ["<leader>", "c"],
+        "commands": ["editor.action.goToReferences"]
+       }
+    ],
+    "vim.smartRelativeLine": true,
+    "vim.handleKeys": {
+        "f": false,
+        "<C-d>": false,
+        "<C-t>": false,
+        "<C-s>": false,
+        "<C-z>": false
+    },
+    "vim.commandLineModeKeyBindingsNonRecursive": [
+    
+    ],
+    "workbench.statusBar.visible": false,
+    "window.menuBarVisibility": "compact",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none",
+    "vim.insertModeKeyBindingsNonRecursive": [
+    
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+    ],
+    "vim.visualModeKeyBindings": [
+       {
+        "before": ["<leader>", "e"],
+        "commands": ["editor.action.refactor"]
+       },
+    ],
+    "editor.tokenColorCustomizations": {
+        // "comments": "#FF9900"
+    },
+    "editor.glyphMargin": false,
+    "syntax.highlightComment": false,
+    "syntax.highlightLanguages": [
+
+        "c",
+        "cpp",
+        "python",
+        "typescript",
+        "typescriptreact",
+        "javascript",
+        "go",
+        "rust",
+        "php",
+        "ruby",
+        "shellscript",
+        "ocaml",
+        "lua"
+    ],
+    "workbench.preferredHighContrastLightColorTheme": "Naysayer88",
+    "window.autoDetectHighContrast": false,
+    "todo-tree.highlights.customHighlight": {
+    
+    
+        "BUG": {
+            "icon": "bug"
+        },
+        "HACK": {
+            "icon": "tools"
+        },
+        "FIXME": {
+            "icon": "flame"
+        },
+        "XXX": {
+            "icon": "$(close)"
+        }
+    },
+    "todo-tree.highlights.useColourScheme": true,
+    "todo-tree.highlights.foregroundColourScheme": [],
+    "todo-tree.highlights.enabled": false,
+}
