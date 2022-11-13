@@ -20,30 +20,19 @@
     "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
 },
-    {
-        "key": "ctrl+n",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+alt+e",
-        "command": "workbench.action.toggleZenMode"
-    },
-    {
-        "key": "ctrl+k z",
-        "command": "-workbench.action.toggleZenMode"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "-workbench.action.newWindow"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "editor.action.addSelectionToPreviousFindMatch"
-    }
+{
+    "key": "ctrl+n",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+},
+{
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+},
+{
+    "key": "ctrl+alt+e",
+    "command": "workbench.action.toggleZenMode"
+},
+// Downwards from here is the settings to navigate the explorer tree with vim motions.
 ]

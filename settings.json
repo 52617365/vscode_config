@@ -47,7 +47,6 @@
   "vim.smartRelativeLine": true,
   "vim.handleKeys": {
     "f": false,
-    "<C-d>": false,
     "<C-t>": false,
     "<C-s>": false,
     "<C-z>": false
@@ -60,7 +59,7 @@
   ],
   "vim.useSystemClipboard": true,
 
-  "workbench.colorCustomizations": {
+"workbench.colorCustomizations": {
     "editorGroupHeader.tabsBackground": "#1A1A1A",
     "editor.background": "#1A1A1A",
 
@@ -82,4 +81,28 @@
     "sideBar.foreground": "#1c83fa",
   },
   "editor.inlineSuggest.enabled": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.textColor": "#1c83fa",
+  "todo-tree.tree.hideTreeWhenEmpty": true,
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "text",
+      "foreground": "#1c83fa",
+      "background": "#1A1A1A",
+      "iconColour": "#1c83fa"
+    },
+    "BUG": {
+      "type": "text",
+      "foreground": "#1c83fa",
+      "background": "#1A1A1A",
+      "iconColour": "#1c83fa",
+    },
+    "FIXME": {
+      "type": "text",
+      "foreground": "#1c83fa",
+      "background": "#1A1A1A",
+      "iconColour": "#1c83fa",
+    },
+  },
 }
