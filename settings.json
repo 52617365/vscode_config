@@ -1,98 +1,85 @@
 {
-    "vim.leader": "[",
-    "workbench.colorTheme": "Naysayer88",
-    "cmake.configureOnOpen": true,
-    "vim.easymotion": true,
-    "vim.normalModeKeyBindings": [
-    
-       {
-        "before": ["<leader>","f"],
-        "commands": ["workbench.action.quickOpen"]
-       },
-       {
-        "before": ["<leader>", "g"],
-        "commands": ["workbench.action.showAllSymbols"]
-       },
-       {
-        "before": ["<leader>", "r"],
-        "commands": ["editor.action.rename"]
-       },
-       {
-        "before": ["<leader>", "e"],
-        "commands": ["editor.action.refactor"]
-       },
-       {
-        "before": ["<leader>", "c"],
-        "commands": ["editor.action.goToReferences"]
-       }
-    ],
-    "vim.smartRelativeLine": true,
-    "vim.handleKeys": {
-        "f": false,
-        "<C-d>": false,
-        "<C-t>": false,
-        "<C-s>": false,
-        "<C-z>": false
+  "vim.leader": "[",
+  "vim.easymotion": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"]
     },
-    "vim.commandLineModeKeyBindingsNonRecursive": [
-    
-    ],
-    "workbench.statusBar.visible": false,
-    "window.menuBarVisibility": "compact",
-    "workbench.layoutControl.enabled": false,
-    "workbench.editor.enablePreview": false,
-    "workbench.startupEditor": "none",
-    "vim.insertModeKeyBindingsNonRecursive": [
-    
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-    ],
-    "vim.visualModeKeyBindings": [
-       {
-        "before": ["<leader>", "e"],
-        "commands": ["editor.action.refactor"]
-       },
-    ],
-    "editor.tokenColorCustomizations": {
-        // "comments": "#FF9900"
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.action.showAllSymbols"]
     },
-    "editor.glyphMargin": false,
-    "syntax.highlightComment": false,
-    "syntax.highlightLanguages": [
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.new"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["editor.action.refactor"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": [";", "t"],
+      "commands": ["testing.runAll"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.quickSwitchWindow"]
+    },
+    {
+      "before": ["enter"],
+      "commands": ["editor.action.format"]
+    },
+    {
+      // leader -s for "split
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.splitEditorRight"]
+    }
+  ],
+  "vim.smartRelativeLine": true,
+  "vim.handleKeys": {
+    "f": false,
+    "<C-d>": false,
+    "<C-t>": false,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["editor.action.refactor"]
+    }
+  ],
+  "vim.useSystemClipboard": true,
 
-        "c",
-        "cpp",
-        "python",
-        "typescript",
-        "typescriptreact",
-        "javascript",
-        "go",
-        "rust",
-        "php",
-        "ruby",
-        "shellscript",
-        "ocaml",
-        "lua"
-    ],
-    "workbench.preferredHighContrastLightColorTheme": "Naysayer88",
-    "window.autoDetectHighContrast": false,
-    "todo-tree.highlights.customHighlight": {
+  "workbench.colorCustomizations": {
+    "editorGroupHeader.tabsBackground": "#1A1A1A",
+    "editor.background": "#1A1A1A",
+
+    "tab.activeBackground": "#2e19f018",
+    "tab.activeForeground": "#1c83fa",
+
+    "titleBar.activeBackground": "#1A1A1A",
+    "titleBar.activeForeground": "#1c83fa",
+
+    "statusBar.background": "#1A1A1A",
+    "statusBar.focusBorder": "#1A1A1A",
+
+    "activityBar.background": "#1A1A1A",
+    "activityBar.foreground": "#1c83fa",
+
+    "editorCursor.foreground": "#ffffff",
     
-    
-        "BUG": {
-            "icon": "bug"
-        },
-        "HACK": {
-            "icon": "tools"
-        },
-        "FIXME": {
-            "icon": "flame"
-        },
-        "XXX": {
-            "icon": "$(close)"
-        }
-    },
-    "todo-tree.highlights.useColourScheme": true,
-    "todo-tree.highlights.foregroundColourScheme": [],
-    "todo-tree.highlights.enabled": false,
+    "sideBar.background": "#1A1A1A",
+    "sideBar.foreground": "#1c83fa",
+  },
+  "editor.inlineSuggest.enabled": true,
 }
