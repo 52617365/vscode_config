@@ -34,5 +34,19 @@
     "key": "ctrl+alt+e",
     "command": "workbench.action.toggleZenMode"
 },
-// Downwards from here is the settings to navigate the explorer tree with vim motions.
+{
+    "key": "ctrl+g", 
+    "command":"search.action.openInEditor",
+    "when": "editorFocus",
+},
+{
+    "key": "ctrl+c", 
+    "command":"workbench.action.terminal.focus",
+    "when": "editorFocus"
+},
+{
+    "key": "ctrl+v", 
+    "command":"workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+}
 ]

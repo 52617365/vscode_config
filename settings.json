@@ -15,10 +15,6 @@
       "commands": ["editor.action.rename"]
     },
     {
-      "before": ["<leader>", "t"],
-      "commands": ["workbench.action.terminal.new"]
-    },
-    {
       "before": ["<leader>", "e"],
       "commands": ["editor.action.refactor"]
     },
@@ -32,7 +28,15 @@
     },
     {
       "before": ["<leader>", "b"],
-      "commands": ["workbench.action.quickSwitchWindow"]
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.debug.stepOver"]
     },
     {
       "before": ["enter"],
@@ -105,4 +109,7 @@
       "iconColour": "#1c83fa",
     },
   },
+  "python.experiments.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "go.toolsManagement.autoUpdate": true,
 }
