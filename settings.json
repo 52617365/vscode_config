@@ -46,14 +46,24 @@
       // leader -s for "split
       "before": ["<leader>", "s"],
       "commands": ["workbench.action.splitEditorRight"]
-    }
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["]", "t"],
+      "commands": ["workbench.action.previousEditor"]
+    },
   ],
-  "vim.smartRelativeLine": true,
   "vim.handleKeys": {
     "f": false,
+    "/": false,
     "<C-t>": false,
     "<C-s>": false,
-    "<C-z>": false
+    "<C-z>": false,
+    "<C-PgUp>": false,
+    "<C-PgDown>": false,
   },
   "vim.visualModeKeyBindings": [
     {
@@ -63,53 +73,69 @@
   ],
   "vim.useSystemClipboard": true,
 
-"workbench.colorCustomizations": {
-    "editorGroupHeader.tabsBackground": "#1A1A1A",
-    "editor.background": "#1A1A1A",
+// "workbench.colorCustomizations": {
 
-    "tab.activeBackground": "#2e19f018",
-    "tab.activeForeground": "#1c83fa",
+//     "editorGroupHeader.tabsBackground": "#1A1A1A",
+//     "editor.background": "#1A1A1A",
 
-    "titleBar.activeBackground": "#1A1A1A",
-    "titleBar.activeForeground": "#1c83fa",
+//     "tab.activeBackground": "#2e19f018",
+//     "tab.activeForeground": "#1c83fa",
 
-    "statusBar.background": "#1A1A1A",
-    "statusBar.focusBorder": "#1A1A1A",
+//     "titleBar.activeBackground": "#1A1A1A",
+//     "titleBar.activeForeground": "#1c83fa",
 
-    "activityBar.background": "#1A1A1A",
-    "activityBar.foreground": "#1c83fa",
+//     "statusBar.background": "#1A1A1A",
+//     "statusBar.focusBorder": "#1A1A1A",
 
-    "editorCursor.foreground": "#ffffff",
+//     "activityBar.background": "#1A1A1A",
+//     "activityBar.foreground": "#1c83fa",
+
+//     "editorCursor.foreground": "#ffffff",
     
-    "sideBar.background": "#1A1A1A",
-    "sideBar.foreground": "#1c83fa",
-  },
+//     "sideBar.background": "#1A1A1A",
+//     "sideBar.foreground": "#1c83fa",
+//   },
   "editor.inlineSuggest.enabled": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.textColor": "#1c83fa",
-  "todo-tree.tree.hideTreeWhenEmpty": true,
-  "todo-tree.highlights.customHighlight": {
-    "TODO": {
-      "icon": "check",
-      "type": "text",
-      "foreground": "#1c83fa",
-      "background": "#1A1A1A",
-      "iconColour": "#1c83fa"
-    },
-    "BUG": {
-      "type": "text",
-      "foreground": "#1c83fa",
-      "background": "#1A1A1A",
-      "iconColour": "#1c83fa",
-    },
-    "FIXME": {
-      "type": "text",
-      "foreground": "#1c83fa",
-      "background": "#1A1A1A",
-      "iconColour": "#1c83fa",
-    },
-  },
   "python.experiments.enabled": false,
   "editor.accessibilitySupport": "off",
   "go.toolsManagement.autoUpdate": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": true,
+    "c": false,
+    "cpp": false,
+    "bat": false
+  },
+  "window.menuBarVisibility": "compact",
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "editor.formatOnSave": true,
+  "html.autoClosingTags": false,
+  "debug.console.wordWrap": false,
+  "css.lint.unknownAtRules": "ignore",
+  "git.ignoreRebaseWarning": true,
+  "git.confirmSync": false,
+  "github.gitAuthentication": false,
+  "workbench.layoutControl.enabled": false,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "monkeyC.developerKeyPath": "c:\\Users\\rase\\dev\\Garmin-Money-App\\developer_key",
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "workbench.colorTheme": "Naysayer88",
 }

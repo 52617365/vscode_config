@@ -48,5 +48,12 @@
     "key": "ctrl+v", 
     "command":"workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
-}
-]
+},
+{ 
+    "key": "[t", 
+    "command": "workbench.action.nextEditor" 
+},
+{ 
+    "key": "]t", 
+    "command": "workbench.action.previousEditor" 
+},
