@@ -3,57 +3,121 @@
   "vim.easymotion": true,
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<leader>", "f"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     },
     {
-      "before": ["<leader>", "g"],
-      "commands": ["workbench.action.showAllSymbols"]
+      "before": [
+        "<leader>",
+        "g"
+      ],
+      "commands": [
+        "workbench.action.showAllSymbols"
+      ]
     },
     {
-      "before": ["<leader>", "r"],
-      "commands": ["editor.action.rename"]
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
     },
     {
-      "before": ["<leader>", "e"],
-      "commands": ["editor.action.refactor"]
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "editor.action.refactor"
+      ]
     },
     {
-      "before": ["<leader>", "c"],
-      "commands": ["editor.action.goToReferences"]
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ]
     },
     {
-      "before": [";", "t"],
-      "commands": ["testing.runAll"]
+      "before": [
+        ";",
+        "t"
+      ],
+      "commands": [
+        "testing.runAll"
+      ]
     },
     {
-      "before": ["<leader>", "b"],
-      "commands": ["editor.debug.action.toggleBreakpoint"]
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "editor.debug.action.toggleBreakpoint"
+      ]
     },
     {
-      "before": ["<leader>", "d"],
-      "commands": ["workbench.action.debug.start"]
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.debug.start"
+      ]
     },
     {
-      "before": ["<leader>", "o"],
-      "commands": ["workbench.action.debug.stepOver"]
+      "before": [
+        "<leader>",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.debug.stepOver"
+      ]
     },
     {
-      "before": ["enter"],
-      "commands": ["editor.action.format"]
+      "before": [
+        "enter"
+      ],
+      "commands": [
+        "editor.action.format"
+      ]
     },
     {
       // leader -s for "split
-      "before": ["<leader>", "s"],
-      "commands": ["workbench.action.splitEditorRight"]
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.splitEditorRight"
+      ]
     },
     {
-      "before": ["<leader>", "t"],
-      "commands": ["workbench.action.nextEditor"]
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
     },
     {
-      "before": ["]", "t"],
-      "commands": ["workbench.action.previousEditor"]
+      "before": [
+        "]",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
     },
   ],
   "vim.handleKeys": {
@@ -67,34 +131,31 @@
   },
   "vim.visualModeKeyBindings": [
     {
-      "before": ["<leader>", "e"],
-      "commands": ["editor.action.refactor"]
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "editor.action.refactor"
+      ]
     }
   ],
   "vim.useSystemClipboard": true,
-
-// "workbench.colorCustomizations": {
-
-//     "editorGroupHeader.tabsBackground": "#1A1A1A",
-//     "editor.background": "#1A1A1A",
-
-//     "tab.activeBackground": "#2e19f018",
-//     "tab.activeForeground": "#1c83fa",
-
-//     "titleBar.activeBackground": "#1A1A1A",
-//     "titleBar.activeForeground": "#1c83fa",
-
-//     "statusBar.background": "#1A1A1A",
-//     "statusBar.focusBorder": "#1A1A1A",
-
-//     "activityBar.background": "#1A1A1A",
-//     "activityBar.foreground": "#1c83fa",
-
-//     "editorCursor.foreground": "#ffffff",
-    
-//     "sideBar.background": "#1A1A1A",
-//     "sideBar.foreground": "#1c83fa",
-//   },
+  // "workbench.colorCustomizations": {
+  //     "editorGroupHeader.tabsBackground": "#1A1A1A",
+  //     "editor.background": "#1A1A1A",
+  //     "tab.activeBackground": "#2e19f018",
+  //     "tab.activeForeground": "#1c83fa",
+  //     "titleBar.activeBackground": "#1A1A1A",
+  //     "titleBar.activeForeground": "#1c83fa",
+  //     "statusBar.background": "#1A1A1A",
+  //     "statusBar.focusBorder": "#1A1A1A",
+  //     "activityBar.background": "#1A1A1A",
+  //     "activityBar.foreground": "#1c83fa",
+  //     "editorCursor.foreground": "#ffffff",
+  //     "sideBar.background": "#1A1A1A",
+  //     "sideBar.foreground": "#1c83fa",
+  //   },
   "editor.inlineSuggest.enabled": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.textColor": "#1c83fa",
@@ -137,5 +198,8 @@
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
-  "workbench.colorTheme": "Naysayer88",
+  "workbench.colorTheme": "GitHub Dark",
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.highlightRelated.breakPoints.enable": false,
 }
