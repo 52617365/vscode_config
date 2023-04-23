@@ -5,19 +5,22 @@
     {
       "before": [
         "<leader>",
-        "f"
+        "g"
       ],
-      "commands": [
-        "workbench.action.quickOpen"
+      "after": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "j"
       ]
     },
     {
       "before": [
         "<leader>",
-        "g"
+        "f"
       ],
       "commands": [
-        "workbench.action.showAllSymbols"
+        "workbench.action.quickOpen"
       ]
     },
     {
@@ -161,19 +164,18 @@
   "vim.highlightedyank.textColor": "#1c83fa",
   "python.experiments.enabled": false,
   "editor.accessibilitySupport": "off",
-  "go.toolsManagement.autoUpdate": true,
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
     "plaintext": true,
     "markdown": true,
+    "scminput": false,
     "c": false,
     "cpp": false,
-    "bat": false
+    "bat": true,
+    "rust": false
   },
   "window.menuBarVisibility": "compact",
-  "svelte.enable-ts-plugin": true,
-  "svelte.plugin.svelte.note-new-transformation": false,
   "editor.formatOnSave": true,
   "html.autoClosingTags": false,
   "debug.console.wordWrap": false,
@@ -185,7 +187,6 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  "monkeyC.developerKeyPath": "c:\\Users\\rase\\dev\\Garmin-Money-App\\developer_key",
   "javascript.autoClosingTags": false,
   "typescript.autoClosingTags": false,
   "[typescriptreact]": {
@@ -202,4 +203,9 @@
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.highlightRelated.breakPoints.enable": false,
+  "debug.allowBreakpointsEverywhere": true,
+  "hexeditor.columnWidth": 4,
+  "hexeditor.showDecodedText": false,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
 }
