@@ -4,8 +4,7 @@
   "vim.normalModeKeyBindings": [
     {
       "before": [
-        "<leader>",
-        "g"
+        "enter",
       ],
       "after": [
         "<leader>",
@@ -87,14 +86,6 @@
       ]
     },
     {
-      "before": [
-        "enter"
-      ],
-      "commands": [
-        "editor.action.format"
-      ]
-    },
-    {
       // leader -s for "split
       "before": [
         "<leader>",
@@ -144,22 +135,7 @@
     }
   ],
   "vim.useSystemClipboard": true,
-  // "workbench.colorCustomizations": {
-  //     "editorGroupHeader.tabsBackground": "#1A1A1A",
-  //     "editor.background": "#1A1A1A",
-  //     "tab.activeBackground": "#2e19f018",
-  //     "tab.activeForeground": "#1c83fa",
-  //     "titleBar.activeBackground": "#1A1A1A",
-  //     "titleBar.activeForeground": "#1c83fa",
-  //     "statusBar.background": "#1A1A1A",
-  //     "statusBar.focusBorder": "#1A1A1A",
-  //     "activityBar.background": "#1A1A1A",
-  //     "activityBar.foreground": "#1c83fa",
-  //     "editorCursor.foreground": "#ffffff",
-  //     "sideBar.background": "#1A1A1A",
-  //     "sideBar.foreground": "#1c83fa",
-  //   },
-  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.enabled": false,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.textColor": "#1c83fa",
   "python.experiments.enabled": false,
@@ -184,22 +160,15 @@
   "git.confirmSync": false,
   "github.gitAuthentication": false,
   "workbench.layoutControl.enabled": false,
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
   "javascript.autoClosingTags": false,
   "typescript.autoClosingTags": false,
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "liveServer.settings.donotShowInfoMsg": true,
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "Naysayer88",
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.highlightRelated.breakPoints.enable": false,
@@ -208,4 +177,23 @@
   "hexeditor.showDecodedText": false,
   "hexeditor.defaultEndianness": "little",
   "hexeditor.inspectorType": "aside",
+  "workbench.editor.enablePreview": false,
+  // DISABLING AUTO COMPLETION
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  // Controls if suggestions should be accepted with "Enter" - in addition to "Tab". Helps to avoid ambiguity between inserting new lines and accepting suggestions.
+  "editor.acceptSuggestionOnEnter": "off",
+  // Controls the delay in ms after which quick suggestions will show up.
+  "editor.quickSuggestionsDelay": 10,
+  // Enable word based suggestions
+  "editor.wordBasedSuggestions": false,
+  "telemetry.telemetryLevel": "off",
+  "workbench.colorCustomizations": {
+    "editorInlayHint.foreground": "#888a",
+    "editorInlayHint.background": "#0000",
+  },
 }
