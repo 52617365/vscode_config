@@ -130,14 +130,32 @@
  },
  //
 
- // This will go up the grep results from find all occurences from within the editor.
+  { "key": "shift+cmd+k", "command": "search.action.focusPreviousSearchResult", "when": "hasSearchResult || inSearchEditor" },
+  { "key": "shift+cmd+j", "command": "search.action.focusNextSearchResult", "when": "hasSearchResult || inSearchEditor" },
+ //
+
+ // This will go up the file explorer from within the editor.
  {
-     "key": "shift+cmd+k",
+     "key": "ctrl+shift+k",
      "command": "runCommands",
      "args": { 
          "commands": [
-             "search.action.focusSearchList",
+             "workbench.view.explorer",
              "list.focusUp",
+             "workbench.action.focusActiveEditorGroup"
+         ]
+     }
+ },
+ //
+
+ // This will go down the file explorer from within the editor.
+ {
+     "key": "ctrl+shift+j",
+     "command": "runCommands",
+     "args": { 
+         "commands": [
+             "workbench.view.explorer",
+             "list.focusDown",
              "workbench.action.focusActiveEditorGroup"
          ]
      }
