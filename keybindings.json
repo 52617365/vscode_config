@@ -1,59 +1,174 @@
-// Place your key bindings in this file to override the defaultsauto[]
+// Place your key bindings in this file to override the defaults
 [
-{
-    "key": "ctrl+j",
-    "command": "selectNextSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-},
-{
-    "key": "ctrl+k",
-    "command": "selectPrevSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-},
-{
-    "key": "ctrl+j",
-    "command": "workbench.action.quickOpenNavigateNext",
-    "when": "inQuickOpen"
-},
-{
-    "key": "ctrl+k",
-    "command": "workbench.action.quickOpenNavigatePrevious",
-    "when": "inQuickOpen"
-},
-{
-    "key": "ctrl+n",
-    "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-},
-{
-    "key": "ctrl+d",
-    "command": "-editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-},
-{
-    "key": "ctrl+alt+e",
-    "command": "workbench.action.toggleZenMode"
-},
-{
-    "key": "ctrl+g", 
-    "command":"search.action.openInEditor",
-    "when": "editorFocus",
-},
-{
-    "key": "ctrl+c", 
-    "command":"workbench.action.terminal.focus",
-    "when": "editorFocus"
-},
-{
-    "key": "ctrl+v", 
-    "command":"workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-},
-{ 
-    "key": "[t", 
-    "command": "workbench.action.nextEditor" 
-},
-{ 
-    "key": "]t", 
-    "command": "workbench.action.previousEditor" 
-},
+ // Getting rid of clash.
+ { "key": "cmd+j", "command": "-workbench.action.togglePanel" },
+
+ // Navigating code completion pop ups down with cmd+j
+ {
+     "key": "cmd+j",
+     "command": "selectNextSuggestion",
+     "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+ },
+ //
+
+ // Navigating code completion pop ups up with cmd+k
+ {
+     "key": "cmd+k",
+     "command": "selectPrevSuggestion",
+     "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+ },
+ //
+  
+ // Navigate quick open windows down with cmd + j.
+ {
+     "key": "cmd+j",
+     "command": "workbench.action.quickOpenNavigateNext",
+     "when": "inQuickOpen"
+ },
+ //
+
+ // Navigate quick open windows up with cmd + k.
+ {
+     "key": "cmd+k",
+     "command": "workbench.action.quickOpenNavigatePrevious",
+     "when": "inQuickOpen"
+ },
+ //
+
+ // Multiple cursors backwards.
+ {
+     "key": "cmd+shift+n",
+     "command": "editor.action.addSelectionToPreviousFindMatch",
+     "when": "editorFocus"
+ },
+ //
+
+ // Multiple cursors forwards.
+ {
+     "key": "cmd+n",
+     "command": "editor.action.addSelectionToNextFindMatch",
+     "when": "editorFocus"
+ },
+ //
+
+ // Toggle to focus on terminal and back.
+ {
+     "key": "ctrl+c", 
+     "command":"workbench.action.terminal.focus",
+     "when": "editorFocus"
+ },
+ {
+     "key": "ctrl+c", 
+     "command":"workbench.action.focusActiveEditorGroup",
+     "when": "terminalFocus"
+ },
+ //
+ 
+ // This keybinding switches windows, it only works well if there's only two windows open.
+ { 
+     "key": "; ;", 
+     "command": "workbench.action.nextEditor" 
+ },
+ // Toggle to go to file explorer and back.
+ {
+     "key": "cmd+e",
+     "command": "workbench.view.explorer",
+     "when": "editorTextFocus"
+ },
+ {
+     "key": "cmd+e",
+     "command": "workbench.action.focusActiveEditorGroup",
+     "when": "filesExplorerFocus"
+ },
+ //
+
+
+  // Disabling previous one to be able to use it for running tasks.
+  { "key": "shift+cmd+r", "command": "-rerunSearchEditorSearch"},
+
+  // Running run task with shift+cmd+r
+  {
+      "key": "shift+cmd+r",
+      "command": "workbench.action.tasks.runTask"
+  },
+  //
+
+  //
+  // Toggle to toggle find all occurences window (cmd shift f)
+  {
+        "key": "; g",
+        "command": "workbench.action.findInFiles",
+        // TODO: we can actually make this way better by manually passing the query in.
+        // "args": {
+        //     "query": "${input:variableID}", 
+        // },
+        "when": "editorTextFocus || editorIsOpen || filesExplorerFocus"
+ },
+ {
+        "key": "; g",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "searchViewletVisible && searchViewletFocus"
+ },
+ //
+
+
+// getting rid of the original command so we can add our own.
+{ "key": "shift+cmd+j", "command": "-workbench.action.search.toggleQueryDetails" },
+{ "key": "shift+cmd+k", "command": "-editor.action.deleteLines" },
+
+ // This will go down the grep results from find all occurences from within the editor.
+ {
+     "key": "shift+cmd+j",
+     "command": "runCommands",
+     "args": { 
+         "commands": [
+             "search.action.focusSearchList",
+             "list.focusDown",
+             "workbench.action.focusActiveEditorGroup"
+         ]
+     }
+ },
+ //
+
+ // This will go up the grep results from find all occurences from within the editor.
+ {
+     "key": "shift+cmd+k",
+     "command": "runCommands",
+     "args": { 
+         "commands": [
+             "search.action.focusSearchList",
+             "list.focusUp",
+             "workbench.action.focusActiveEditorGroup"
+         ]
+     }
+ },
+ //
+
+ // Getting rid of file explorer renaming clash.
+ { "key": "enter", "command": "-renameFile", "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" },
+ //
+
+ // Keybinding to go to a file from file explorer with enter instead of ctrl enter.
+ {
+     "key": "enter",
+     "command": "workbench.view.explorer",
+     "when": "focusFilesExplorer"
+ },
+ //
+
+ // Use n in the file explorer view to rename a file instead of enter.
+ {
+     "key": "n",
+     "command": "renameFile",
+     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+ },
+ //
+
+ // Use d in the file explorer view to delete a file.
+ {
+     "key": "d",
+     "command": "deleteFile",
+     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+ },
+ //
+]

@@ -1,199 +1,162 @@
 {
-  "vim.leader": "[",
-  "vim.easymotion": true,
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "enter",
-      ],
-      "after": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "j"
-      ]
+    "vim.leader": ";",
+    "vim.easymotion": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "enter",
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "<leader>",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "editor.action.refactor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ]
+        },
+        {
+            "before": [
+                ";",
+                "t"
+            ],
+            "commands": [
+                "testing.runAll"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "commands": [
+                "editor.debug.action.toggleBreakpoint"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "commands": [
+                "workbench.action.debug.start"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.debug.stepOver"
+            ]
+        },
+        {
+            // leader -s for "split
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.splitEditorRight"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<leader>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        // {
+        //     "before": [
+        //         "]",
+        //         "t"
+        //     ],
+        //     "commands": [
+        //         "workbench.action.previousEditor"
+        //     ]
+        // },
+    ],
+    "vim.handleKeys": {
+        "f": false,
+        "/": false,
+        "<C-t>": false,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-PgUp>": false,
+        "<C-PgDown>": false,
     },
-    {
-      "before": [
-        "<leader>",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "editor.action.refactor"
+            ]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.textColor": "#1c83fa",
+    "telemetry.telemetryLevel": "off",
+    "editor.fontSize": 15,
+    "editor.inlineSuggest.showToolbar": "always",
+    "explorer.confirmDelete": false,
+    "remote.SSH.remotePlatform": {
+        "10.211.55.3": "windows"
     },
-    {
-      "before": [
-        "<leader>",
-        "r"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ]
+    "workbench.startupEditor": "none",
+    "zig.path": "",
+    "zig.zls.path": "/Users/rase/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    "zig.initialSetupDone": true,
+    "workbench.sideBar.location": "right",
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorTheme": "GitHub Dark High Contrast",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
     },
-    {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "editor.action.refactor"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "c"
-      ],
-      "commands": [
-        "editor.action.goToReferences"
-      ]
-    },
-    {
-      "before": [
-        ";",
-        "t"
-      ],
-      "commands": [
-        "testing.runAll"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "b"
-      ],
-      "commands": [
-        "editor.debug.action.toggleBreakpoint"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "commands": [
-        "workbench.action.debug.start"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "o"
-      ],
-      "commands": [
-        "workbench.action.debug.stepOver"
-      ]
-    },
-    {
-      // leader -s for "split
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.splitEditorRight"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "t"
-      ],
-      "commands": [
-        "workbench.action.nextEditor"
-      ]
-    },
-    {
-      "before": [
-        "]",
-        "t"
-      ],
-      "commands": [
-        "workbench.action.previousEditor"
-      ]
-    },
-  ],
-  "vim.handleKeys": {
-    "f": false,
-    "/": false,
-    "<C-t>": false,
-    "<C-s>": false,
-    "<C-z>": false,
-    "<C-PgUp>": false,
-    "<C-PgDown>": false,
-  },
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "editor.action.refactor"
-      ]
-    }
-  ],
-  "vim.useSystemClipboard": true,
-  "editor.inlineSuggest.enabled": false,
-  "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.textColor": "#1c83fa",
-  "python.experiments.enabled": false,
-  "editor.accessibilitySupport": "off",
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": false,
-    "c": false,
-    "cpp": false,
-    "bat": true,
-    "rust": false
-  },
-  "window.menuBarVisibility": "compact",
-  "editor.formatOnSave": true,
-  "html.autoClosingTags": false,
-  "debug.console.wordWrap": false,
-  "css.lint.unknownAtRules": "ignore",
-  "git.ignoreRebaseWarning": true,
-  "git.confirmSync": false,
-  "github.gitAuthentication": false,
-  "workbench.layoutControl.enabled": false,
-  "javascript.autoClosingTags": false,
-  "typescript.autoClosingTags": false,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "workbench.colorTheme": "Naysayer88",
-  "rust-analyzer.inlayHints.chainingHints.enable": false,
-  "rust-analyzer.inlayHints.parameterHints.enable": false,
-  "rust-analyzer.highlightRelated.breakPoints.enable": false,
-  "debug.allowBreakpointsEverywhere": true,
-  "hexeditor.columnWidth": 4,
-  "hexeditor.showDecodedText": false,
-  "hexeditor.defaultEndianness": "little",
-  "hexeditor.inspectorType": "aside",
-  "workbench.editor.enablePreview": false,
-  // DISABLING AUTO COMPLETION
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.quickSuggestions": {
-    "other": false,
-    "comments": false,
-    "strings": false
-  },
-  // Controls if suggestions should be accepted with "Enter" - in addition to "Tab". Helps to avoid ambiguity between inserting new lines and accepting suggestions.
-  "editor.acceptSuggestionOnEnter": "off",
-  // Controls the delay in ms after which quick suggestions will show up.
-  "editor.quickSuggestionsDelay": 10,
-  // Enable word based suggestions
-  "editor.wordBasedSuggestions": false,
-  "telemetry.telemetryLevel": "off",
-  "workbench.colorCustomizations": {
-    "editorInlayHint.foreground": "#888a",
-    "editorInlayHint.background": "#0000",
-  },
 }
