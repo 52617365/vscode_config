@@ -64,11 +64,6 @@
  },
  //
  
- // This keybinding switches windows, it only works well if there's only two windows open.
- { 
-     "key": "; ;", 
-     "command": "workbench.action.nextEditor" 
- },
  // Toggle to go to file explorer and back.
  {
      "key": "cmd+e",
@@ -96,7 +91,7 @@
   //
   // Toggle to toggle find all occurences window (cmd shift f)
   {
-        "key": "; g",
+        "key": "cmd+g",
         "command": "workbench.action.findInFiles",
         // TODO: we can actually make this way better by manually passing the query in.
         // "args": {
@@ -105,7 +100,7 @@
         "when": "editorTextFocus || editorIsOpen || filesExplorerFocus"
  },
  {
-        "key": "; g",
+        "key": "cmd+g",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "searchViewletVisible && searchViewletFocus"
  },
